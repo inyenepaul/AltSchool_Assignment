@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My media</title>
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="./assets/image/AltSchool logo.png" width="100" height="100" alt="AltSchool_logo"></a>
+        <nav>
+            <ul>
+                <li><a href="./index.html" target="_self">Home</a></li>
+                <li><a href="form.html" target="_self">Sign-Up</a></li>
+                <li><a href="table.html" target="_self">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Welcome to Our Media Gallery</h1>
+            <p>Explore our collection of audio and video content.</p>
+        </section>
+        
+        <section>
+            <h2>Featured Video</h2>
+            <figure>
+                <video controls width="600">
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>A beautiful scenery captured in 4K video.</figcaption>
+            </figure>
+        </section>
+        
+        <section>
+            <h2>Featured Audio</h2>
+            <figure>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    <source src="audio.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>A soothing instrumental track.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <picture>
+                <!-- Image for devices with width 1200px and above (Laptops and desktops) -->
+                <source srcset="images/large.jpg" media="(min-width: 1200px)">
+                <!-- Image for devices with width between 768px and 1199px (Tablets) -->
+                <source srcset="images/medium.jpg" media="(min-width: 768px) and (max-width: 1199px)">
+                <!-- Image for devices with width between 480px and 767px (Small tablets and large mobile phones) -->
+                <source srcset="images/small.jpg" media="(min-width: 480px) and (max-width: 767px)">
+                <!-- Image for devices with width less than 480px (Mobile phones) -->
+                <source srcset="images/xsmall.jpg" media="(max-width: 479px)">
+                <!-- Fallback image -->
+                <img src="images/default.jpg" alt="Responsive Image">
+            </picture>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2021 AltSchool Africa</p>
+    </footer>
+</body>
+</html>

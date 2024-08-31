@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  header img {
+    display: block;
+    margin: 0 auto 15px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #f39c12;
+  }
+  
+  /* Main Content Styling */
+  main {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  thead {
+    background-color: #4a90e2;
+    color: #fff;
+  }
+  
+  thead th {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #e9e9f0;
+  }
+  
+  tbody th,
+  tbody td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f0f0f5;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  td {
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+      margin-bottom: 10px;
+    }
+  
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+      text-align: left;
+    }
+  
+    td:before {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  
+    td:nth-of-type(1):before {
+      content: "School";
+    }
+  
+    td:nth-of-type(2):before {
+      content: "Course 1";
+    }
+  
+    td:nth-of-type(3):before {
+      content: "Course 2";
+    }
+  
+    td:nth-of-type(4):before {
+      content: "Course 3";
+    }
+  
+    td:nth-of-type(5):before {
+      content: "Course 4";
+    }
+  }
+  
