@@ -20,19 +20,34 @@
     
     <main>
         <section>
-            <h1>Welcome to Our Media Gallery</h1>
-            <p>Explore our collection of audio and video content.</p>
+            <h1>Welcome to My Media Gallery</h1>
+            <p>Explore my collection of audio and video content.</p>
         </section>
         
+        <section>
+            <picture>
+                <!-- Image for devices with width 1200px and above (Laptops and desktops) -->
+                <source srcset="assets/image/My pix_event.jpg">
+                <!-- Image for devices with width between 768px and 1199px (Tablets) -->
+                <source srcset="assets/image/My pix_event.jpg">
+                <!-- Image for devices with width between 480px and 767px (Small tablets and large mobile phones) -->
+                <source srcset="assets/image/My pix_event.jpg">
+                <!-- Image for devices with width less than 480px (Mobile phones) -->
+                <source srcset="assets/image/My pix_event.jpg">
+                <!-- Fallback image -->
+                <img src="assets/image/My pix_event.jpg" alt="Responsive Image">
+            </picture>
+        </section>
+
         <section>
             <h2>Featured Video</h2>
             <figure>
                 <video controls width="600">
-                    <source src="video.mp4" type="video/mp4">
+                    <source src="assets/video/Never Stop Never Settle - Themed.mp4" type="video/mp4">
                     <source src="video.webm" type="video/webm">
                     Your browser does not support the video tag.
                 </video>
-                <figcaption>A beautiful scenery captured in 4K video.</figcaption>
+                <figcaption>Never Stop, Never Settle Video</figcaption>
             </figure>
         </section>
         
@@ -40,32 +55,19 @@
             <h2>Featured Audio</h2>
             <figure>
                 <audio controls>
-                    <source src="audio.mp3" type="audio/mpeg">
+                    <source src="assets/audio/Fireboy_DML_Ft_D_Smoke_-_Champ.mp3" type="audio/mpeg">
                     <source src="audio.ogg" type="audio/ogg">
                     Your browser does not support the audio element.
                 </audio>
-                <figcaption>A soothing instrumental track.</figcaption>
+                <figcaption>A motivational track</figcaption>
             </figure>
         </section>
 
-        <section>
-            <picture>
-                <!-- Image for devices with width 1200px and above (Laptops and desktops) -->
-                <source srcset="images/large.jpg" media="(min-width: 1200px)">
-                <!-- Image for devices with width between 768px and 1199px (Tablets) -->
-                <source srcset="images/medium.jpg" media="(min-width: 768px) and (max-width: 1199px)">
-                <!-- Image for devices with width between 480px and 767px (Small tablets and large mobile phones) -->
-                <source srcset="images/small.jpg" media="(min-width: 480px) and (max-width: 767px)">
-                <!-- Image for devices with width less than 480px (Mobile phones) -->
-                <source srcset="images/xsmall.jpg" media="(max-width: 479px)">
-                <!-- Fallback image -->
-                <img src="images/default.jpg" alt="Responsive Image">
-            </picture>
-        </section>
+        
     </main>
 
     <footer>
-        <p>&copy; 2021 AltSchool Africa</p>
+        <p>&copy; 2024 Inyene Paul Udoh</p>
     </footer>
 </body>
 </html>

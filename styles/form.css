@@ -122,6 +122,7 @@ html {
           .twin {
             display: flex;
             flex-direction: column;
+            padding-top: 1em;
             width: 100%;
             gap: 0.5em;
 
@@ -146,4 +147,54 @@ html {
       }
     }
   }
+
+
+/* Media Queries for Responsiveness */
+
+/* Large screens */
+@media (min-width: 1024px) {
+  main {
+      flex-direction: row; /* Horizontal layout */
+  }
+
+  .left-section, .right-section {
+      width: 45%;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .left-section, .right-section {
+      width: 100%;
+  }
+
+  .twin-container {
+      flex-direction: row;
+  }
+
+  .twin {
+      flex: 1 1 45%;
+  }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  main {
+      flex-direction: column; /* Stack sections vertically */
+  }
+
+  .left-section, .right-section {
+      width: 100%; /* Full width on small screens */
+      padding: 10px;
+  }
+
+  .twin-container {
+      flex-direction: column;
+  }
+
+  .twin {
+      flex: 1 1 100%; /* Full width for form fields */
+      margin-bottom: 10px;
+  }
+}
   
